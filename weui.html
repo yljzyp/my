@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+          <html lang="zh-CN">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+<script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.2/weui.min.js"></script>
+
+
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <a  onclick="tanchu()" href="javascript:;" class="weui-btn weui-btn_warn">哈哈</a>
+
+</body>
+
+<script >
+    function tanchu(){
+
+        weui.actionSheet([
+    {
+        label: '拍照',
+        onClick: function () {
+            console.log('拍照');
+        }
+    }, {
+        label: '从相册选择',
+        onClick: function () {
+            console.log('从相册选择');
+        }
+    }, {
+        label: '其他',
+        onClick: function () {
+            console.log('其他');
+        }
+    }
+], [
+    {
+        label: '取消',
+        onClick: function () {
+            console.log('取消');
+        }
+    }
+], {
+    className: 'custom-classname'
+});
+
+    };
+
+
+</script>
+
+
+</html>
